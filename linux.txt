@@ -1,0 +1,13 @@
+Last login: Wed Nov  8 11:19:23 2017 from 10.201.130.21
+[root@localhost ~]# cd /home/qltedproot/apache-tomcat-8.5.23-qltedp
+[root@localhost apache-tomcat-8.5.23-qltedp]# cd bin
+[root@localhost bin] ./shutdown.sh
+nohup ./startup.sh 
+
+lsof -i:8089//
+ps -aux | grep java//查看java进程
+
+kill -9 14861//杀死进程
+
+nohup ./startup.sh
+
